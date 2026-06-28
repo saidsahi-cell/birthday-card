@@ -429,6 +429,13 @@ function activateVoiceEngine() {
   }
 }
 
+const madih = new Audio("madih.mp3");
+
+function playMadih() {
+    madih.currentTime = 0;
+    madih.play();
+}
+
 function playMadih() {
   if ('speechSynthesis' in window) {
     // إلغاء أي مديح معلق سابقاً لضمان البدء السليم
